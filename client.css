@@ -58,9 +58,25 @@ input[type=submit] {
 
 /* Profile styling */
 
+#navigation {
+	width: 100%;
+}
+
+#navigation li {
+    display: table-cell;
+    width: 16.666666667%;  /* (100 / numItems)% */
+    text-align: center;
+    white-space: nowrap;
+}​
+
+@media (max-width: 767px) {
+    #navigation li {
+        width: 100%;
+    }
+}
+
 ul li {
 	display: inline;
-	margin: 55px;
 }
 
 a {
